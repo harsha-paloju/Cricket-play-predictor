@@ -8,7 +8,7 @@ The application takes a **city name** as input, fetches the latest weather infor
 
 ## 🚀 Live Demo
 
-> **Coming Soon**
+https://cricket-play-predictor-lyyf.onrender.com
 
 ---
 
