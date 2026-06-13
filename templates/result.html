@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Prediction Result</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🏏 Cricket Weather Analysis</h1>
+
+    <div class="weather-card">
+
+        <div class="item">
+            <h3>📍 City</h3>
+            <p>{{ city }}</p>
+        </div>
+
+        <div class="item">
+            <h3>🌦 Condition</h3>
+            <p>{{ condition }}</p>
+        </div>
+
+        <div class="item">
+            <h3>🌡 Temperature</h3>
+            <p>{{ temp }} °C</p>
+        </div>
+
+        <div class="item">
+            <h3>💧 Humidity</h3>
+            <p>{{ humidity }} %</p>
+        </div>
+
+        <div class="item">
+            <h3>🌬 Wind Speed</h3>
+            <p>{{ wind }} km/h</p>
+        </div>
+
+    </div>
+
+    <div class="prediction">
+
+        {{ answer }}
+
+    </div>
+
+    <a href="/">← Check Another City</a>
+
+</div>
+
+</body>
+</html>

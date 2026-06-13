@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Play Predictor</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="overlay">
+
+    <div class="card">
+
+        <h1>🏏 Cricket Play Predictor</h1>
+
+        <p>
+            Enter your city and let AI analyze the live weather conditions to predict
+            whether it's a good day to play cricket.
+        </p>
+
+        <form action="/result" method="POST">
+
+            <input
+                type="text"
+                name="city"
+                placeholder="Enter City Name"
+                required>
+
+            <button type="submit">
+                Predict Now
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>
